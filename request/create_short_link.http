@@ -1,0 +1,6 @@
+POST http://localhost:3000/short_url
+Content-Type: application/json
+
+{   
+    "link":"https://erisnilton.dev"
+}

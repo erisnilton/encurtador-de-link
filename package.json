@@ -1,0 +1,30 @@
+{
+  "name": "encurtar_de_link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx --watch src/index.ts ",
+    "migrate:up": "NODE_OPTIONS='--import=tsx' knex migrate:latest --knexfile knexfile.ts --env development",
+    "migrate:down": "NODE_OPTIONS='--import=tsx' knex migrate:rollback --knexfile knexfile.ts --env development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.16.0",
+    "shortid": "^2.2.17"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/shortid": "^2.2.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
+}
