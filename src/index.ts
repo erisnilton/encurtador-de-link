@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.static('public'))
 app.use(express.json());
 
-app.post("/short_url", async (req, res) => {
+app.post("/shorten", async (req, res) => {
   // Pegar A requisição
   if (!req.body?.link) {
     res.status(400).send("Você deve enviar o link");

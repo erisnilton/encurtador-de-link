@@ -24,7 +24,7 @@ urlButton.addEventListener("click", async () => {
 
 
     // faz uma requisição para a API
-    const response = await fetch(`${URL_API}/short_url`, {
+    const response = await fetch(`${URL_API}/shorten`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
