@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 // Middleware para JSON
+app.use(express.static('public'))
 app.use(express.json());
 
 app.post("/short_url", async (req, res) => {
