@@ -34,17 +34,27 @@ git clone https://github.com/erisnilton/encurtador-de-link.git
 cd encurtador-de-links
 ```
 
-2. Suba os containers com Docker Compose:
+2. Instale as dependencias:
+```bash
+pnpm i
+```
+
+3. Suba os containers com Docker Compose:
 
 ```bash
 docker-compose up -d
 ```
 
-3. Rode as Migrations com Knex
+4. Rode as Migrations com Knex
 ```bash
 knex migrate:up
 ou
 pnpm migrate:up
+```
+
+5. suba a aplicação:
+```bash
+pnpm dev
 ```
 
 4. Uma página estática simples para testar a funcionalidade pode ser acessada em:
