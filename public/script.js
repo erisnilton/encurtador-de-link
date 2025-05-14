@@ -8,6 +8,9 @@ const urlResult = document.getElementById("url-result");
 const copyButton = document.getElementById("copy-button"); 
 copyButton.style.display = "none";
 
+const counterResult = document.getElementById("counter-result");
+counterResult.style.display = "none";
+
 
 
 
@@ -38,10 +41,13 @@ urlButton.addEventListener("click", async () => {
 
     // // mostra o resultado na tela
     if (data.short_link) {
-        urlResult.innerHTML = `<a href="${data.short_link}" target="_blank">${data.short_link}</a>`;
+        urlResult.innerHTML = `<a href="${data.short_link.key}" target="_blank">${data.short_link.key}</a>`;
         // mostra o botão de copiar
         copyButton.style.display = "block";
-        urlInput.value = "";
+
+        // mostra o contador
+        counterResult.style.display = "block";
+        counterResult.innerHTML = `Total de Acess: ${data.short_link.counter}`;
     } else {
         alert("Erro ao encurtar a URL");
     }

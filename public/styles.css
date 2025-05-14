@@ -94,6 +94,20 @@ html {
     text-decoration: underline;
     transition: text-decoration 0.3s ease;
 }
+.content__shorts_url{
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+}
+
+.content__shorts_links--badge{
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
 
 .content__shorts_links--item button {
     background-color: #f44336;

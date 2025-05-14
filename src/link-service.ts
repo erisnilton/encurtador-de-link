@@ -1,9 +1,13 @@
-import { create, findOneByFullLink, getLink, update } from "./link-repository.js";
+import { create, findOneByFullLink, getLink, LinkModel, update } from "./link-repository.js";
 
-export async function getShortLink(link: string): Promise<string | undefined> {
+export async function getShortLink(link: string): Promise<Partial<LinkModel> | undefined> {
   const result = await findOneByFullLink(link);
+  console.log(result);
   if (result) {
-    return `${process.env.API_URL}/${result.key}`;
+    return {
+      key: `${process.env.API_URL}/${result.key}`,
+      counter: result.counter,
+    }
   }
 }
 

@@ -34,9 +34,7 @@ app.post("/shorten", async (req, res) => {
     }
     const shortLink = await generateShortLink(link);
 
-    res.send({
-      short_link: shortLink,
-    });
+    res.send({shortLink});
   } catch (error) {
     console.error(error);
     res.status(500).send({ error: "Erro ao salvar no banco" });
