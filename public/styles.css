@@ -1,0 +1,111 @@
+html {
+    background-color: #212121;
+}
+.content__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+.content__title h1{
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-bottom: -0.5rem;
+}
+
+.content__box, .content__shorts_links{
+    background-color: #424242;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 62rem;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+    
+}
+
+.content__box--input {
+    display: flex;
+    gap: 0.5rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.content__box--input input {
+    flex:1;
+    border-radius: .5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+.content__box--input input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.content__box--input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.content__box--input button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.content__shorts_links{
+    margin-top: 2rem;
+}
+
+.content__shorts_links--title, .context__box-title  {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.content__shorts_links--list {
+    list-style: none;
+    padding: 0;
+}
+
+.content__shorts_links--item {
+    background-color: #616161;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content__shorts_links--item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.content__shorts_links--item a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
+}
+
+.content__shorts_links--item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.content__shorts_links--item button:hover {
+    background-color: #d32f2f;
+    transition: background-color 0.3s ease;
+}
