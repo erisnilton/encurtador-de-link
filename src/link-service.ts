@@ -2,7 +2,6 @@ import { create, findOneByFullLink, getLink, LinkModel, update } from "./link-re
 
 export async function getShortLink(link: string): Promise<Partial<LinkModel> | undefined> {
   const result = await findOneByFullLink(link);
-  console.log(result);
   if (result) {
     return {
       key: `${process.env.API_URL}/${result.key}`,
